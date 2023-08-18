@@ -5,19 +5,20 @@ import Array from "./data";
 const News = () => {
   const [newsData, setNewsData] = useState([]);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   async function fetchData() {
     try {
-      const response = await axios.get("http://3.128.79.129:3001/get-news");
-      const data = await response.json();
-      setNewsData(data.news);
+      const response = await axios.get("http://18.221.59.245:3001/get-news");
+      // const data = await response.json();
+      console.log(response);
+      setNewsData(response.data.news);
     } catch (error) {
       console.log("Error", error);
     }
   }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
