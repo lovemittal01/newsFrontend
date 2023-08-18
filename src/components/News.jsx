@@ -10,13 +10,9 @@ const News = () => {
   }, []);
 
   async function fetchData() {
-    try {
-      const response = await axios.get("http://localhost:3001/get-news");
-      const data = await response.json();
-      setNewsData(data);
-    } catch (error) {
-      console.log("Error", error);
-    }
+    const response = await axios.get("http://3.128.79.129:3001/get-news");
+    const data = await response.json();
+    setNewsData(data.news);
   }
 
   return (
