@@ -13,14 +13,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-  /* <div className="card-div">
-        <div className="card-body">
-          <Title />
-          <Para />
-          <View />
-        </div>
-        <Img />
-      </div> */
-}

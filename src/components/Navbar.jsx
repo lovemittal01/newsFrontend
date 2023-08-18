@@ -19,7 +19,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             <img src="./news.png" className="logo" alt="" />
           </a>
-          <div className="navbar-collapse" id="navbarTogglerDemo03">
+          <div className="navbar-collapse nav-bar" id="navbarTogglerDemo03">
             <ul className="navbar-nav navcont me-auto mb-2 mb-lg-0">
               <li className="nav-item navele">
                 <a className="nav-link active" aria-current="page" href="#">

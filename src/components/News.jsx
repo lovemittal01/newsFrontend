@@ -3,26 +3,26 @@ import axios from "axios";
 import Array from "./data";
 
 const News = () => {
-  const [newsData, setNewsData] = useState([]);
+  // const [newsData, setNewsData] = useState([]);
 
-  async function fetchData() {
-    try {
-      const response = await axios.get("http://18.221.59.245:3001/get-news");
-      // const data = await response.json();
-      console.log(response);
-      setNewsData(response.data.news);
-    } catch (error) {
-      console.log("Error", error);
-    }
-  }
+  // async function fetchData() {
+  //   try {
+  //     const response = await axios.get("http://3.14.18.79:3001/get-news");
+  //     // const data = await response.json();
+  //     console.log(response);
+  //     setNewsData(response.data.news);
+  //   } catch (error) {
+  //     console.log("Error", error);
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <>
-      {newsData.map((curElm) => {
+      {Array.map((curElm) => {
         return (
           <div className="card-div">
             <div className="card-body">
